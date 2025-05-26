@@ -10,11 +10,18 @@ numero2 = int.Parse(Console.ReadLine());
 
 resultadoSoma = numero1 + numero2;
 resultadoSub = numero1 - numero2;
-resultadoDiv = (double)numero1 / numero2;
 resultadoMult = numero1 * numero2;
-resultadoMod = numero1 % numero2;
-
-
+if (numero1 == 0 || numero2 == 0)
+{
+    Console.WriteLine("\nA divisão por zero não é permitida.");
+    resultadoDiv = 0;
+    resultadoMod = 0;
+} else
+{
+    resultadoDiv = (double)numero1 / numero2;
+    
+    resultadoMod = numero1 % numero2;
+}
 
 Console.WriteLine($"== Operações com os números {numero1} e {numero2} ==");
 
