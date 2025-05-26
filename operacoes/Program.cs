@@ -1,5 +1,5 @@
 ﻿int numero1, numero2;
-double resultadoSoma, resultadoSub, resultadoDiv, resultadoMult;
+double resultadoSoma, resultadoSub, resultadoDiv, resultadoMult, resultadoMod;
 
 
 Console.WriteLine("Digite o primeiro número: ");
@@ -12,6 +12,7 @@ resultadoSoma = numero1 + numero2;
 resultadoSub = numero1 - numero2;
 resultadoDiv = (double)numero1 / numero2;
 resultadoMult = numero1 * numero2;
+resultadoMod = numero1 % numero2;
 
 
 
@@ -26,8 +27,13 @@ Console.WriteLine($"{resultadoSub}\n");
 Console.WriteLine("== DIVISÃO ==");
 Console.WriteLine($"{resultadoDiv}\n");
 
+Console.WriteLine("== RESTO DA DIVISÃO ==");
+Console.WriteLine($"{resultadoMod}\n");
+
 Console.WriteLine("== MULTIPLICAÇÃO ==");
 Console.WriteLine($"{resultadoMult}\n");
+
+
 
 
 
