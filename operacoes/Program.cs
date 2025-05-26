@@ -14,8 +14,8 @@ resultadoMult = numero1 * numero2;
 if (numero1 == 0 || numero2 == 0)
 {
     Console.WriteLine("\nA divisão por zero não é permitida.");
-    resultadoDiv = 0;
-    resultadoMod = 0;
+    resultadoDiv = double.NaN;
+    resultadoMod = double.NaN;
 } else
 {
     resultadoDiv = (double)numero1 / numero2;
